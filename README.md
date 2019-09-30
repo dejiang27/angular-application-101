@@ -1,1 +1,1 @@
-# angular-application-101
+# angular-application-mydist
