@@ -17,6 +17,7 @@ export class MyButtonComponent implements OnInit {
 
   clicked(){
     this.likeImage = this.myservice.likeImage(this.likeImage);
+    //Test the like button. Show the result in the console.
     console.log(this.likeImage);
     return this.likeImage;
   }
