@@ -1,5 +1,6 @@
 # angular-application-mydist
-
+Dejiang Chen
+https://github.com/dejiang27/angular-application-mydist
 
 Problem 1: Completed.
 Problem 2: Completed.
