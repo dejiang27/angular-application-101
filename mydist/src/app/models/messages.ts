@@ -2,8 +2,8 @@
 import { Message } from './message';
 
 export class Messages {
-    messages:Array<Message>;
-
+    messages:Message[]=[];
+    //messages:Array<Message>;
     constructor(){}
     
     //Add message to the messages array.
