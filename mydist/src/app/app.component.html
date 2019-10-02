@@ -17,13 +17,15 @@
   <app-my-image> </app-my-image>
   <app-my-button> </app-my-button>
 
-  <div>
-    <ul>
-      <li *ngFor="let message of messages">
-        <b>{{message.timestamp}}</b> - {{message.text}}
-      </li>
-    </ul>
+  <div *ngFor="let message of messages">
+    <b>{{message.timestamp}}</b> - {{message.text}}
   </div>
+
+  <label for="message">Message</label>
+
+  <input (input)="text=$event.target.value" type="text" class="form-control" placeholder="New message...">
+  <button class="btn btn-success" (click)="submit()">Submit</button>
+
 
 
 

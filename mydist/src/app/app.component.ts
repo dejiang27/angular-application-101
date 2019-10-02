@@ -9,11 +9,23 @@ import { Message } from './models/message';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  text : string;
+
   messages:Message[]=[];
   title = 'mydist';
-
+  playerName: string;
   constructor(private ms:MessagesService){
     ms.appendmes();
     this.messages = ms.getmess();
   }
+  submit(){
+    //let text = newmess.value;
+
+    var currentDate = new Date();
+    var times = currentDate.toString();
+    var newmess = new Message(times, this.text);
+    this.messages.push(newmess);
+  }
+
 }

@@ -28,6 +28,7 @@ export class MessagesService {
   
   //Add message to the Messages array.
   appendmes(){
+
     this.messages.appendMessage(this.mes);
     this.messages.appendMessage(this.mes1);
     this.messages.appendMessage(this.mes2);
@@ -36,6 +37,10 @@ export class MessagesService {
     this.messages.appendMessage(this.mes5);
     this.messages.appendMessage(this.mes6);
     this.messages.appendMessage(this.mes7);
+  }
+  
+  addMes(message:Message){
+    this.messages.appendMessage(message);
   }
 
   getmess(){
