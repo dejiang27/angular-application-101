@@ -2,7 +2,7 @@
 export class Message {
     timestamp:string;
     text:string;
-    constructor(){
+    constructor(timestamp:string, text:string){
         this.timestamp = this.timestamp;
         this.text = this.text;
     }
